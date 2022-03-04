@@ -11,6 +11,7 @@ print("Starting WorldScanner Backend Service")
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config['SECRET_KEY'] = "change me"
 
 def allowed_file(filename):
     return '.' in filename and \
